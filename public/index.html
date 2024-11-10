@@ -3,28 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AhorraYa - Landing Page</title>
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>AhorraYa</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Aquí se vincula el archivo CSS -->
 </head>
 <body>
-<header>
-    <h1>Bienvenidos a AhorraYa</h1>
-    <p>Gestiona tus finanzas de forma fácil y eficiente</p>
-</header>
-<main>
-    <section>
-        <h2>Características</h2>
-        <ul>
-            <li>Control de gastos y ahorros</li>
-            <li>Recomendaciones personalizadas</li>
-            <li>Metas de ahorro y planes financieros</li>
-        </ul>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#">AhorraYa.com</a> <!-- AhorraYa.com alineado a la izquierda -->
+            </div>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Contáctenos</a></li>
+                <li><a href="Registrarse.html" class="btn-register">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Empezar -->
+    <section class="hero">
+        <div class="content">
+            <h1>AhorraYa</h1>
+            <p>Con nuestros métodos, ahorrar nunca había sido tan fácil.</p>
+            <!-- Botón con enlace a otra web -->
+            <a href="InicioSesion.html" class="btn">Empezar</a>
+        </div>
+        <div class="image">
+            <img src="20240424-Como-ahorrar-mas-y-mejor-anexo-1.png" alt="AhorraYa" />
+        </div>
     </section>
-</main>
-<footer>
-    <p>© 2024 AhorraYa. Todos los derechos reservados.</p>
+    
+
+    <!-- Segunda sección -->
+    <section class="features">
+        <!-- Contenedor de las imágenes -->
+        <div class="image-container">
+            <!-- Fila con las dos primeras imágenes -->
+            <div class="image-row">
+                <img src="Prueba.png" alt="Imagen 1" class="img1">
+                <img src="Prueba.png" alt="Imagen 2" class="img2">
+            </div>
+            <!-- Tercera imagen debajo -->
+            <img src="Prueba.png" alt="Imagen 3" class="img3">
+        </div>
+    
+        <!-- Lista de características a la derecha -->
+        <div class="feature-list">
+            <div class="feature">
+                <img src="check.png" alt="Icono Ahorro">
+                <p class="feature-text">Ahorro automatizado: Configura metas y nosotros hacemos el resto, ayudándote a apartar dinero de manera inteligente.</p>
+            </div>
+            <div class="feature">
+                <img src="check.png" alt="Icono Análisis">
+                <p class="feature-text">Análisis personalizado: Obtén reportes detallados que te muestran cómo y en qué estás gastando, ayudándote a ajustar tus hábitos.</p>
+            </div>
+            <div class="feature">
+                <img src="check.png" alt="Icono Seguridad">
+                <p class="feature-text">Seguridad de tus datos: Garantizamos la privacidad y protección de tu información financiera.</p>
+            </div>
+            <div class="feature">
+                <img src="check.png" alt="Icono Soporte">
+                <p class="feature-text">Soporte 24/7: Estamos aquí para resolver tus dudas en cualquier momento.</p>
+            </div>
+            <a href="#" class="btn">Empieza a ahorrar ahora</a>
+        </div>
+    </section>
+
+<!-- Nuestras estrategias -->
+<!-- Sección de estadísticas parte de nuestras estrategias de ahorro -->
+<section class="statistics">
+    <h2>Nuestras estrategias de ahorro han ayudado a muchos alrededor del mundo</h2>
+    <p>Con nuestra aplicación, más de 12,000 usuarios han logrado reducir gastos innecesarios y mejorar su planificación financiera. Ofrecemos herramientas personalizadas que se adaptan a tus hábitos y te guían para que ahorres de manera sencilla y efectiva.</p>
+    
+    <div class="stats">
+        <div class="stat-item">
+            <p>Clientes</p>
+            <span>12K</span>
+        </div>
+        <div class="stat-item">
+            <p>Crecimiento anual</p>
+            <span>55%</span>
+        </div>
+        <div class="stat-item">
+            <p>Ratings Positivos</p>
+            <span>80%</span>
+        </div>
+    </div>
+
+    <div class="image-placeholder">
+        <img src="20240424-Como-ahorrar-mas-y-mejor-anexo-1.png" alt="Ilustración de ahorro">
+    </div>
+</section>
+
+<!-- Algunos de nuestros mejores clientes -->
+<section class="testimonials">
+    <h2>Algunos de nuestros mejores clientes</h2>
+    <p>Usuarios</p>
+
+    <div class="testimonial">
+        <img src="check.png" alt="Foto de usuario" class="testimonial-img">
+        <div class="testimonial-content">
+            <h3>Juan Pérez</h3>
+            <p>Desde que empecé a usar esta app, he logrado organizar mis finanzas de manera mucho más eficiente. Ahora sé exactamente en qué gasto mi dinero y puedo ver claramente las áreas donde puedo ahorrar.</p>
+            <button class="btn-details">Visualizar detalles</button>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <img src="check.png" alt="Foto de usuario" class="testimonial-img">
+        <div class="testimonial-content">
+            <h3>Anderson Ramírez</h3>
+            <p>La interfaz es muy fácil de entender y usar. No necesitas ser un experto en finanzas para aprovechar todas las funciones, lo que hace que sea ideal para cualquier persona que quiera controlar mejor sus gastos.</p>
+            <button class="btn-details">Visualizar detalles</button>
+        </div>
+    </div>
+
+    <div class="testimonial">
+        <img src="check.png" alt="Foto de usuario" class="testimonial-img">
+        <div class="testimonial-content">
+            <h3>Antonio Mendoza</h3>
+            <p>Me encantan las alertas y recordatorios de la app. Me avisan cuando me estoy acercando al límite de gasto mensual o si tengo alguna factura por vencer. Esto me ha ayudado a evitar cargos innecesarios.</p>
+            <button class="btn-details">Visualizar detalles</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de artículos de la app -->
+<section class="articles">
+    <h2>Artículos de la app</h2>
+    <div class="article-list">
+        <div class="article">
+            <img src="fondos-inversion-1200x600-1.webp" alt="Artículo 1" class="article-img">
+            <h3>AhorraYa: toma el control de tus finanzas personales</h3>
+            <p>¿Cansado de no saber a dónde va tu dinero cada mes? Con esta app...</p>
+            <a href="#" class="learn-more">Learn more</a>
+        </div>
+        <div class="article">
+            <img src="fondos-inversion-1200x600-1.webp" alt="Artículo 2" class="article-img">
+            <h3>Automatización de procesos financieros</h3>
+            <p>La automatización de procesos financieros ha emergido como una herramienta esencial...</p>
+            <a href="#" class="learn-more">Learn more</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sección de experiencias de nuevos usuarios -->
+<section class="user-experiences">
+    <h2>Experiencias de nuevos usuarios</h2>
+    <div class="experience-list">
+        <div class="experience">
+            <p>"Una app cómoda para automatizar operaciones importantes"</p>
+            <div class="user-info">
+                <img src="ruta-de-la-imagen.png" alt="Usuario 1" class="user-img">
+                <div>
+                    <strong>Carlos</strong>
+                    <span>Oficinista</span>
+                </div>
+            </div>
+        </div>
+        <div class="experience">
+            <p>"Herramientas útiles para todo el día"</p>
+            <div class="user-info">
+                <img src="ruta-de-la-imagen.png" alt="Usuario 2" class="user-img">
+                <div>
+                    <strong>Adrian</strong>
+                    <span>Abogado</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Sección de Preguntas Frecuentes -->
+<section class="faq-section">
+    <div class="faq-image">
+        <img src="fondos-inversion-1200x600-1.webp" alt="Imagen representativa">
+    </div>
+    <div class="faq-questions">
+        <h2>Preguntas frecuentes</h2>
+
+        <!-- Pregunta 1 -->
+        <details class="faq-item">
+            <summary class="faq-question">¿Mis datos financieros están bien guardados?</summary>
+            <div class="faq-answer">
+                <p>Nuestra app cuenta con un sofisticado sistema de resguardo de datos, además de una política que solo permite usar estos datos para el ahorro progresivo que configure el usuario.</p>
+            </div>
+        </details>
+
+        <!-- Pregunta 2 -->
+        <details class="faq-item">
+            <summary class="faq-question">¿Puedo quitar el ahorro en cualquier momento?</summary>
+            <div class="faq-answer">
+                <p>Sí, puedes ajustar tus ahorros en cualquier momento desde la configuración de tu cuenta.</p>
+            </div>
+        </details>
+
+        <!-- Pregunta 3 -->
+        <details class="faq-item">
+            <summary class="faq-question">¿Puedo retirar mi dinero cuando sea?</summary>
+            <div class="faq-answer">
+                <p>El retiro de dinero está disponible en cualquier momento y sin penalización.</p>
+            </div>
+        </details>
+    </div>
+</section>
+
+
+<!-- Cabecera con texto y botones -->
+<section class="header-section">
+    <div class="header-content">
+        <h1>Empiece su cuenta ahora</h1>
+        <div class="header-buttons">
+            <a href="Registrarse.html" class="btn-register">Registrarse</a>
+            <a href="InicioSesion.html" class="btn-login">Iniciar Sesión</a>
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Pie de página -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>AhorraYa</h4>
+            <div class="social-icons">
+                <!-- Iconos de redes sociales -->
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <p><strong>Descarga la App</strong></p>
+            <p>AhorraYa</p>
+        </div>
+        <div class="footer-section">
+            <p><strong>Explora</strong></p>
+            <p>¿Quiénes somos?</p>
+            <p>Visión y Misión</p>
+            <p>Ofertas laborales</p>
+        </div>
+        <div class="footer-section">
+            <p><strong>Soporte</strong></p>
+            <p>Contactar soporte</p>
+            <p>Asistente virtual</p>
+            <p>Desarrolladores</p>
+        </div>
+    </div>
 </footer>
-<script src="assets/scripts/main.js"></script>
-</body>
-</html>
+
+
