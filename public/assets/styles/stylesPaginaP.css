@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #dfd1a6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Encabezado */
+header {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon, .user-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-login, .btn-register {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.btn-login {
+    background-color: #555;
+}
+
+.btn-register {
+    background-color: #333;
+}
+
+/* Sección principal */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo-section {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 230px;
+}
+
+.logo-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px; /* Espacio entre cuadros */
+    margin-top: 20px;
+}
+
+.option {
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #c0c0c0;
+}
+
+.option img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.option p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
