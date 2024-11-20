@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuenta Bancaria</title>
+  <link rel="stylesheet" href="assets/styles/stylesCuentaB.css">
+  <script>
+    function regresarMenu() {
+      window.location.href = "PaginaPrincipal.html";
+    }
+
+    function regresarInicio() {
+      window.location.href = "index.html";
+    }
+
+    function toggleProfileMenu() {
+      const menu = document.getElementById("profile-menu");
+      menu.classList.toggle("show");
+    }
+
+    window.addEventListener("click", function (e) {
+      const menu = document.getElementById("profile-menu");
+      const profileImg = document.querySelector(".profile-img");
+      if (!menu.contains(e.target) && e.target !== profileImg) {
+        menu.classList.remove("show");
+      }
+    });
+
+    function cerrarSesion() {
+      window.location.href = "index.html";
+    }
+  </script>
+</head>
+<body>
+<div class="container">
+  <header class="header" style="position: relative;">
+    <button class="menu-btn" onclick="regresarMenu()">
+      <img src="assets/images/flecha-izq.png" alt="Regresar" width="24">
+    </button>
+    <h1 class="title">Cuenta Bancaria</h1>
+    <img src="assets/images/usuario.png" alt="Usuario" class="profile-img" onclick="toggleProfileMenu()">
+    <div id="profile-menu" class="profile-menu">
+      <div class="profile-header">
+        <img src="assets/images/usuario.png" alt="Perfil" class="profile-menu-img">
+        <p class="profile-name">Perfil</p>
+        <p class="profile-email">usuario.123@gmail.com</p>
+        <a href="#" class="edit-profile">Editar Perfil</a>
+      </div>
+      <ul>
+        <li><a href="#">Desvincular una cuenta bancaria</a></li>
+        <li><a href="#">Cambiar contraseña</a></li>
+        <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+        <li><a href="#">Servicio al cliente</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="account-card">
+      <div class="account-header">
+        <div class="account-balance">$1500.34</div>
+        <div class="account-number">••4652</div>
+      </div>
+      <div class="account-info">
+        <img src="assets/images/banco.png" alt="Banco" class="bank-img">
+      </div>
+    </div>
+
+    <div class="account-list">
+      <h2>Bancos disponibles:</h2>
+      <label class="account-item">
+        <input type="checkbox" class="bank-checkbox">
+        <img src="assets/images/bcplogo.png" alt="BCP" class="bank-icon">
+        <span>Banco del Crédito del Perú</span>
+      </label>
+      <label class="account-item">
+        <input type="checkbox" class="bank-checkbox">
+        <img src="assets/images/interbanklogo.png" alt="Interbank" class="bank-icon">
+        <span>Interbank</span>
+      </label>
+      <label class="account-item">
+        <input type="checkbox" class="bank-checkbox">
+        <img src="assets/images/bbvalogo.png" alt="BBVA" class="bank-icon">
+        <span>Banco Bilbao Vizcaya Argentaria</span>
+      </label>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <button class="menu-btn" onclick="regresarInicio()">
+      <img src="assets/images/ahorra_ya_logo.png" alt="Regresar al inicio" class="footer-logo">
+    </button>
+  </footer>
+</div>
+</body>
+</html>

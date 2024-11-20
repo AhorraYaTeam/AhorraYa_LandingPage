@@ -1,0 +1,252 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #e5daab;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e5daab;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* Contenido */
+.content {
+    flex-grow: 1;
+}
+
+.history-card {
+    background-color: #E6E6E6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.history-icon {
+    display: block;
+    margin: 0 auto 20px;
+    width: 50px;
+    height: 50px;
+}
+
+.transaction-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.transaction-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.transaction-item.positive {
+    color: #15803d;
+}
+
+.transaction-item.negative {
+    color: #b91c1c;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transaction-item img {
+    width: 24px;
+    height: 24px;
+}
+
+.transaction-item.positive {
+    color: #15803d;
+}
+
+.transaction-item.negative {
+    color: #b91c1c;
+}
+
+/* Efecto al pasar el cursor */
+.transaction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+.transaction-item {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar el texto */
+    padding: 12px;
+    background-color: white;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.transaction-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.transaction-item.positive {
+    color: #15803d;
+}
+
+.transaction-item.negative {
+    color: #b91c1c;
+}
+/* Estilo del menú del perfil */
+/* Menú del perfil */
+.profile-menu {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    left: auto; /* Quitar valores innecesarios */
+    transform: translateX(0); /* Alinear al contenedor principal */
+    width: 200px;
+    background-color: #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 10;
+}
+
+/* Mostrar menú al activarlo */
+.profile-menu.show {
+    display: block;
+}
+
+/* Estilo del encabezado del menú */
+.profile-header {
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+/* Imagen del perfil */
+.profile-menu-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.profile-email {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.edit-profile {
+    font-size: 14px;
+    color: #1abc9c;
+    text-decoration: none;
+}
+
+.edit-profile:hover {
+    text-decoration: underline;
+}
+
+/* Lista del menú */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    border-top: 1px solid #34495e;
+}
+
+ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #34495e;
+}
+
+

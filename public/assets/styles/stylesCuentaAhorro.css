@@ -1,0 +1,248 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+    background-color: #e5daab;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+/* Contenido */
+.content {
+    flex-grow: 1;
+}
+
+.saving-card {
+    background-color: #E6E6E6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.saving-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.saving-amount {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.saving-meta {
+    font-size: 14px;
+    color: #555;
+}
+
+.saving-graph img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Análisis de ahorro */
+.analysis-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    text-align: center;
+}
+
+.saving-analysis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.analysis-graph {
+    width: 70%;
+    height: auto;
+}
+
+.analysis-filter {
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Footer */
+.saving-footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.percentage-btn {
+    background-color: #15803d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.footer-logo {
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+/* Caja alrededor de la gráfica */
+.analysis-box {
+    background-color: #E6E6E6; /* Fondo de la caja */
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.analysis-graph {
+    width: 70%;
+    height: auto;
+}
+
+.analysis-filter {
+    width: 25%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+/* Contenedor del menú */
+.profile-menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Menú desplegable */
+.profile-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: #1b3a4b;
+    color: white;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    overflow: hidden;
+}
+
+/* Encabezado del menú */
+.profile-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-menu-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 2px solid #ffffff;
+}
+
+.profile-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.profile-email {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.edit-profile {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Lista de opciones */
+.profile-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-menu ul li {
+    padding: 12px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+}
+
+.profile-menu ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Mostrar menú al activar */
+.profile-menu.show {
+    display: block;
+}
+

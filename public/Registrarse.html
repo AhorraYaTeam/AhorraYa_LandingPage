@@ -3,48 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AhorraYa - Inicio</title>
-    <link rel="stylesheet" href="assets/styles/stylesPaginaP.css"> <!-- Ruta corregida para el CSS -->
+    <title>Registro - AhorraYa</title>
+    <link rel="stylesheet" href="assets/styles/stylesR.css">
 </head>
 <body>
-<!-- Encabezado con menú de navegación -->
-<header>
-    <div class="menu">
-        <a href="menu.html">
-            <img src="assets/images/tresBarras.png" alt="Menú" class="menu-icon"> <!-- Ruta corregida para la imagen del menú -->
-        </a>
-        <img src="assets/images/usuario.png" alt="User Icon" class="user-icon"> <!-- Ruta corregida para la imagen del usuario -->
-    </div>
-    <div class="buttons">
-        <a href="InicioSesion.html" class="btn-login">Iniciar Sesión</a>
-        <a href="Registrarse.html" class="btn-register">Registrarse</a>
-    </div>
-</header>
-
-<!-- Sección principal con logo y opciones -->
-<main>
-    <div class="logo-section">
-        <img src="assets/images/ahorra_ya_logo-removebg-preview (1) (1).png" alt="AhorraYa Logo" class="logo"> <!-- Ruta corregida para el logo -->
-        <h1>¿Qué necesitas hoy?</h1>
-    </div>
-    <div class="options">
-        <a href="cuenta_bancaria.html" class="option">
-            <img src="assets/images/banco.png" alt="Cuenta bancaria"> <!-- Ruta corregida para la imagen de cuenta bancaria -->
-            <p>Cuenta bancaria</p>
-        </a>
-        <a href="cuenta_ahorro.html" class="option">
-            <img src="assets/images/cerdo.png" alt="Cuenta ahorro"> <!-- Ruta corregida para la imagen de cuenta ahorro -->
-            <p>Cuenta ahorro</p>
-        </a>
-        <a href="historial.html" class="option">
-            <img src="assets/images/historial.png" alt="Historial"> <!-- Ruta corregida para la imagen de historial -->
-            <p>Historial</p>
-        </a>
-        <a href="inversiones.html" class="option">
-            <img src="assets/images/inversion.png" alt="Inversiones"> <!-- Ruta corregida para la imagen de inversiones -->
-            <p>Inversiones</p>
-        </a>
-    </div>
-</main>
+<div class="container">
+    <header class="header">
+        <button class="back-btn" onclick="window.history.back();">
+            <img src="assets/images/flecha-izq.png" alt="Regresar" width="24">
+        </button>
+    </header>
+    <main class="content">
+        <div class="logo-section">
+            <img src="assets/images/ahorra_ya_logo.png" alt="AhorraYa Logo" class="logo">
+        </div>
+        <h1 class="title">Regístrate</h1>
+        <form class="register-form">
+            <div class="form-group">
+                <label for="username">
+                    <img src="assets/images/usuario.png" alt="Usuario">
+                </label>
+                <input type="text" id="username" placeholder="Nombre de Usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="first-name">
+                    <img src="assets/images/usuario.png" alt="Nombres">
+                </label>
+                <input type="text" id="first-name" placeholder="Nombres" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">
+                    <img src="assets/images/usuario.png" alt="Apellidos">
+                </label>
+                <input type="text" id="last-name" placeholder="Apellidos" required>
+            </div>
+            <div class="form-group">
+                <label for="email">
+                </label>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="form-group">
+                <label for="password">
+                </label>
+                <input type="password" id="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="register-btn">Registrarse</button>
+        </form>
+    </main>
+</div>
 </body>
 </html>

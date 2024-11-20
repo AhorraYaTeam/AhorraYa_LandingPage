@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones</title>
+    <link rel="stylesheet" href="assets/styles/stylesInversiones.css">
+    <script>
+        function regresarMenu() {
+            window.location.href = "PaginaPrincipal.html";
+        }
+        function regresarInicio() {
+            window.location.href = "index.html";
+        }
+        function toggleProfileMenu() {
+            const menu = document.getElementById("profile-menu");
+            menu.classList.toggle("show");
+        }
+        window.addEventListener("click", function (e) {
+            const menu = document.getElementById("profile-menu");
+            const profileImg = document.querySelector(".profile-img");
+            if (!menu.contains(e.target) && e.target !== profileImg) {
+                menu.classList.remove("show");
+            }
+        });
+        function cerrarSesion() {
+            window.location.href = "index.html"; // Ruta a la página de inicio.
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <header class="header" style="position: relative;">
+        <button class="menu-btn" onclick="regresarMenu()">
+            <img src="assets/images/flecha-izq.png" alt="Regresar" width="24">
+        </button>
+        <h1 class="title">Inversiones</h1>
+        <img src="assets/images/usuario.png" alt="Usuario" class="profile-img" onclick="toggleProfileMenu()">
+        <div id="profile-menu" class="profile-menu">
+            <div class="profile-header">
+                <img src="assets/images/usuario.png" alt="Perfil" class="profile-menu-img">
+                <p class="profile-name">Perfil</p>
+                <p class="profile-email">usuario.123@gmail.com</p>
+                <a href="#" class="edit-profile">Editar Perfil</a>
+            </div>
+            <ul>
+                <li><a href="#">Desvincular una cuenta bancaria</a></li>
+                <li><a href="#">Cambiar contraseña</a></li>
+                <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+                <li><a href="#">Servicio al cliente</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <main class="content">
+        <div class="investment-card">
+            <div class="investment-header">
+                <div class="investment-amount">$254.72</div>
+                <div class="investment-meta">META +0.84%</div>
+            </div>
+            <div class="investment-graph">
+                <img src="assets/images/Graficainversiones.jpg" alt="Gráfico">
+            </div>
+        </div>
+
+        <div class="investment-list">
+            <div class="investment-item">
+                <div class="investment-info">
+                    <div class="investment-amount">$120.58</div>
+                    <div class="investment-meta">AMZN -0.89%</div>
+                </div>
+                <div class="investment-action">
+                    <img src="assets/images/flecha-hacia-abajo.png" alt="Bajar" width="24">
+                </div>
+            </div>
+
+            <div class="investment-item">
+                <div class="investment-info">
+                    <div class="investment-amount">$395.23</div>
+                    <div class="investment-meta">NTFX +0.57%</div>
+                </div>
+                <div class="investment-action">
+                    <img src="assets/images/flecha-hacia-arriba.png" alt="Subir" width="24">
+                </div>
+            </div>
+        </div>
+
+        <div class="investment-footer">
+            <button class="percentage-btn">Porcentaje de ganancia: +0.78%</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <button class="menu-btn" onclick="regresarInicio()">
+            <img src="assets/images/ahorra_ya_logo.png" alt="Regresar al inicio" class="footer-logo">
+        </button>
+    </footer>
+
+</div>
+</body>
+</html>

@@ -4,50 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AhorraYa - Inicio</title>
-    <link rel="stylesheet" href="assets/styles/stylesPaginaP.css"> <!-- Ruta corregida para el CSS -->
+    <link rel="stylesheet" href="assets/styles/stylesPaginaP.css"> <!-- Ruta para el CSS -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("nav-menu");
+            menu.classList.toggle("show");
+        }
+        window.addEventListener("click", function (e) {
+            const menu = document.getElementById("nav-menu");
+            const menuIcon = document.querySelector(".menu-icon");
+            if (!menu.contains(e.target) && e.target !== menuIcon) {
+                menu.classList.remove("show");
+            }
+        });
+        function cerrarSesion() {
+            window.location.href = "index.html"; // Cambiar por la ruta de la página de inicio.
+        }
+    </script>
 </head>
 <body>
 <!-- Encabezado con menú de navegación -->
 <header>
     <div class="menu">
-        <a href="menu.html">
-            <img src="assets/images/tresBarras.png" alt="Menú" class="menu-icon"> <!-- Ruta corregida para la imagen del menú -->
-        </a>
-        <img src="assets/images/usuario.png" alt="User Icon" class="user-icon"> <!-- Ruta corregida para la imagen del usuario -->
+        <!-- Menú hamburguesa -->
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <img src="assets/images/usuario.png" alt="User Icon" class="user-icon"> <!-- Ícono del usuario -->
     </div>
-    <div class="buttons">
-        <a href="inicioSesion.html" class="btn-login">Iniciar Sesión</a>
-        <a href="Registrarse.html" class="btn-register">Registrarse</a>
+    <!-- Menú desplegable -->
+    <div id="nav-menu" class="nav-menu">
+        <div class="menu-header">
+            <img src="assets/images/usuario.png" alt="Perfil" class="menu-profile-img">
+            <p class="menu-profile-name">Perfil</p>
+            <p class="menu-profile-email">usuario.123@gmail.com</p>
+            <a href="#" class="menu-edit-profile">Editar Perfil</a>
+        </div>
+        <ul>
+            <li><a href="#">Desvincular una cuenta bancaria</a></li>
+            <li><a href="#">Cambiar contraseña</a></li>
+            <li><a href="#" onclick="cerrarSesion()">Cerrar Sesión</a></li>
+            <li><a href="#">Servicio al cliente</a></li>
+        </ul>
     </div>
 </header>
 
 <!-- Sección principal con logo y opciones -->
 <main>
     <div class="logo-section">
-        <img src="assets/images/ahorra_ya_logo-removebg-preview (1) (1).png" alt="AhorraYa Logo" class="logo"> <!-- Ruta corregida para el logo -->
+        <img src="assets/images/ahorra_ya_logo.png" alt="AhorraYa Logo" class="logo">
         <h1>¿Qué necesitas hoy?</h1>
     </div>
     <div class="options">
         <a href="cuenta_bancaria.html" class="option">
-            <img src="assets/images/banco.png" alt="Cuenta bancaria"> <!-- Ruta corregida para la imagen de cuenta bancaria -->
+            <img src="assets/images/banco.png" alt="Cuenta bancaria">
             <p>Cuenta bancaria</p>
         </a>
         <a href="cuenta_ahorro.html" class="option">
-            <img src="assets/images/cerdo.png" alt="Cuenta ahorro"> <!-- Ruta corregida para la imagen de cuenta ahorro -->
+            <img src="assets/images/cerdo.png" alt="Cuenta ahorro">
             <p>Cuenta ahorro</p>
         </a>
         <a href="historial.html" class="option">
-            <img src="assets/images/historial.png" alt="Historial"> <!-- Ruta corregida para la imagen de historial -->
+            <img src="assets/images/historial.png" alt="Historial">
             <p>Historial</p>
         </a>
         <a href="inversiones.html" class="option">
-            <img src="assets/images/inversion.png" alt="Inversiones"> <!-- Ruta corregida para la imagen de inversiones -->
+            <img src="assets/images/inversion.png" alt="Inversiones">
             <p>Inversiones</p>
+        </a>
+        <!-- Nueva opción Plan de Ahorro -->
+        <a href="plan_ahorro.html" class="option plan-ahorro">
+            <img src="assets/images/bolsadinero.png" alt="Plan de ahorro">
+            <p>Plan de ahorro</p>
         </a>
     </div>
 </main>
 </body>
 </html>
-
-
-

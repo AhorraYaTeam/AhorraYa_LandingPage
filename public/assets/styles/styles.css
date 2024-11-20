@@ -20,19 +20,17 @@ nav {
     padding: 0;
 }
 
-.menu li {
-    margin-left: 20px; /* Espaciado entre los ítems del menú */
+.menu li .registro {
+    background-color: #0073e6; /* Azul brillante para contraste */
+    color: #fff; /* Texto blanco para legibilidad */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px;
+    font-weight: bold; /* Para mayor énfasis */
+    transition: background-color 0.3s ease; /* Efecto suave al interactuar */
 }
 
-.menu li a {
-    text-decoration: none;
-    color: #000; /* Color del texto del menú */
-    padding: 10px;
-    border: 1px solid transparent; /* Borde inicialmente transparente */
-}
-
-.menu li a:hover {
-    border-color: #000; /* Borde negro al pasar el cursor */
+.menu li .registro:hover {
+    background-color: #005bb5; /* Azul más oscuro para hover */
 }
 
 .registro {
@@ -117,8 +115,14 @@ nav ul li .registro {
 }
 
 .hero .image img {
-    max-width: 100%;
+    width: 550px; /* Ajusta este valor según el tamaño deseado */
+    height: auto; /* Mantiene las proporciones */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
+
+
 
 
 /* Segunda sección - features */
@@ -624,5 +628,31 @@ nav ul li .registro {
 .btn:hover {
     background-color: #0056b3; /* Cambia el color para el efecto hover */
 }
+/* Mejora del contraste para texto y fondo */
+body {
+    background-color: #f4e3a5; /* Fondo beige claro */
+    color: #222; /* Texto más oscuro */
+}
 
+/* Títulos (h1, h2, etc.) */
+h1, h2, h3, h4, h5, h6 {
+    color: #111; /* Color más oscuro para mejor legibilidad */
+}
+
+/* Botones */
+button, .btn {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    border: 1px solid #fff; /* Borde claro */
+}
+
+/* Links de navegación */
+nav a, a {
+    color: #222; /* Color del texto */
+    text-decoration: none;
+}
+
+nav a:hover, a:hover {
+    color: #555; /* Cambio de color para hover */
+}
 
